@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FilDOS - AI-Native Decentralized Storage
 
-## Getting Started
+**A Secure, AI-Native, Meaning-First Decentralized Drive**
 
-First, run the development server:
+FilDOS is a revolutionary decentralized storage platform built on Filecoin that enables users to store, search, and share files by meaning rather than cryptic identifiers like CIDs. It combines the power of blockchain technology with AI-driven semantic search to create a truly human-centric storage experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<img width="1503" height="766" alt="Screenshot 2025-08-23 at 11 21 14 AM" src="https://github.com/user-attachments/assets/cf8ab812-7556-4e71-9d02-33e9254c991d" />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **🔍 Semantic Search**: Find files by meaning, not CIDs
+- **📂 NFT-Based Folders**: Folders as ERC-721 NFTs with embedded metadata and access control
+- **📦 Drive Capsules**: Every file becomes a portable capsule with metadata and embeddings
+- **🔗 Agent-Compatible**: Designed for AI agents to own, manage, and interact with storage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗️ Architecture
 
-## Learn More
+### Core Components
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend**: Next.js 15 with TypeScript, Tailwind CSS, and shadcn/ui
+- **Blockchain**: Filecoin FEVM (Calibration testnet) for folder NFTs
+- **Storage**: Filecoin Storage Providers for decentralized file storage and FilCDN
+- **AI Service**: Flask-based API with CLIP and SentenceTransformers
+- **Smart Contracts**: ERC-721 NFTs for folder ownership and access control
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="./public/Archi.jpeg">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Getting Started
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js 18+ and npm/yarn
+- Python 3.8+ (for AI service)
+- MetaMask or compatible Web3 wallet
+- Filecoin Calibration network configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd FilDOS
+   ```
+
+2. **Install frontend dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up the AI service**
+   ```bash
+   cd ai
+   pip install -r requirements.txt
+   ```
+
+### Running the Application
+
+1. **Start the AI service** (in `ai/` directory):
+   ```bash
+   python start.py
+   ```
+
+2. **Start the frontend** (in root directory):
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser** to `http://localhost:3000`
+   
+<img width="1503" height="766" alt="Screenshot 2025-08-23 at 11 22 48 AM" src="https://github.com/user-attachments/assets/aa918e83-f9ef-4dca-8450-b0cfaee1b3e6" />
+
+<img width="1503" height="766" alt="Screenshot 2025-08-23 at 11 23 07 AM" src="https://github.com/user-attachments/assets/f47075f1-d856-48a5-9c8c-fa721643481e" />
+
+
+## 📖 Usage
+
+### Basic Workflow
+
+1. **Connect Wallet**: Connect your MetaMask to Filecoin Calibration network
+2. **Purchase Storage**: Buy storage to create your first folder NFT
+3. **Upload Files**: Upload files with automatic AI-powered metadata generation
+4. **Semantic Search**: Search files using natural language queries
+5. **Share & Collaborate**: Share folders using blockchain-based permissions
+
+### Example Searches
+
+- `"meeting notes"`
+- `"design documents about authentication"`
+- `"photos from the conference"`
+
+## 🤖 AI Service
+
+The AI service provides:
+- **Multi-modal Embeddings**: CLIP for images, BERT for text
+- **Semantic Search**: Vector similarity search across all file types
+- **Content Analysis**: Automatic metadata extraction and summarization
+- **Stateless Design**: No server-side storage, perfect for multi-user scenarios
+
+See `ai/README.md` for detailed AI service documentation.
+
+## 🔐 Smart Contracts
+
+FilDOS uses ERC-721 NFTs for folder management:
+- **Ownership**: NFT defines folder control
+- **Access Control**: View/edit permissions based on ownership
+- **Programmability**: Smart contract logic for sharing and delegation
+- **Metadata**: On-chain storage of folder metadata and indexes
+
+Contract deployment on Filecoin Calibration testnet.
+
+## 🎨 UI Components
+
+Built with modern, accessible components:
+- **shadcn/ui**: High-quality UI components
+- **Tailwind CSS**: Utility-first styling
+- **Framer Motion**: Smooth animations
+- **Lucide Icons**: Consistent iconography
+
+---
+
+**"Forget CIDs. Access your files like you think — by meaning."**
