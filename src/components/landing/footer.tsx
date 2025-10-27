@@ -98,7 +98,7 @@ export function LandingFooter() {
                     <div className="relative pt-[56.25%] w-full max-w-3xl mx-auto mt-10">
                         <iframe 
                             className="absolute top-0 left-0 w-full h-full border border-white rounded-lg"
-                            src="https://www.youtube.com/embed/Qr5B9RzHYEs?si=RUzJAYfpcBvDzMIa" 
+                            src="https://www.youtube.com/embed/fFJgACii3tM?si=vz6sEukN3K1oRKfn" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowFullScreen
                         ></iframe>

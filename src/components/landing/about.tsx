@@ -10,8 +10,8 @@ export function LandingAbout() {
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-4xl font-bold mb-6 text-gray-900">What Is It?</h2>
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            <strong>FilDOS</strong> is a decentralized drive built on Filecoin that lets users{" "}
-                            <span className="font-semibold text-primary">store, search, and share files by meaning</span>, not by raw identifiers like{" "}
+                            <strong>FilDOS</strong> is a decentralized drive built on Filecoin, reimagined for the AI era.{" "}
+                            It lets you store, search, and share files by meaning, not by raw identifiers like{" "}
                             <Tooltip>
                                 <TooltipTrigger asChild>
                                     <span className="underline decoration-dotted cursor-help text-primary">
@@ -26,9 +26,8 @@ export function LandingAbout() {
                         </p>
                         <br />
                         <p className="text-lg text-gray-600 leading-relaxed">
-                            It offers <strong>AI-native</strong>, and{" "}
-                            <strong>agent-compatible</strong> file access — turning decentralized storage into a{" "}
-                            <span className="font-semibold text-primary">human-first semantic memory layer.</span>
+                            With AI-native and agent-compatible access, FilDOS transforms decentralized storage into a semantic memory layer — 
+                            where data becomes intelligent, discoverable, and alive.
                         </p>
                     </div>
                 </div>
@@ -38,9 +37,9 @@ export function LandingAbout() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4 text-gray-900">What makes us different?</h2>
-                        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                             Revolutionary features that make FilDOS the future of decentralized storage
-                        </p>
+                            </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -49,34 +48,12 @@ export function LandingAbout() {
                                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 card-icon group-hover:shadow-lg transition-all">
                                     <Folder className="w-8 h-8 text-white" />
                                 </div>
-                                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                                    <Tooltip>
-                                        <TooltipTrigger asChild>
-                                            <span className="cursor-help">
-                                                NFT-Based Folders
-                                                <HelpCircle className="inline w-3 h-3 ml-1 opacity-50" />
-                                            </span>
-                                        </TooltipTrigger>
-                                        <TooltipContent className="tooltip-content">
-                                            <p>Non-Fungible Tokens representing unique, owned digital folders with embedded smart contract logic</p>
-                                        </TooltipContent>
-                                    </Tooltip>
-                                </CardTitle>
+                                <CardTitle className="text-xl group-hover:text-primary transition-colors">NFT Folders — Ownership Reimagined</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600 text-sm group-hover:text-gray-700 transition-colors">
-                                    Folders are NFTs with metadata, 
-                                    <Tooltip>
-                                        <TooltipTrigger asChild>
-                                            <span className="underline decoration-dotted cursor-help text-primary ml-1">
-                                                embedding indexes
-                                                <HelpCircle className="inline w-3 h-3 ml-1" />
-                                            </span>
-                                        </TooltipTrigger>
-                                        <TooltipContent className="tooltip-content">
-                                            <p>Vector databases that store semantic representations of file content for AI-powered search</p>
-                                        </TooltipContent>
-                                    </Tooltip>, and access logic — enabling true ownership, composability, and programmable access.
+                                    Folders aren&apos;t just file paths. They&apos;re NFTs with logic, metadata, and intelligence.<br />
+                                    Own your storage. Program it. Compose it.
                                 </p>
                             </CardContent>
                         </Card>
@@ -90,18 +67,8 @@ export function LandingAbout() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600 text-sm group-hover:text-gray-700 transition-colors">
-                                    Users search semantically: &ldquo;photo of a village,&rdquo; powered by auto-generated 
-                                    <Tooltip>
-                                        <TooltipTrigger asChild>
-                                            <span className="underline decoration-dotted cursor-help text-primary ml-1">
-                                                embeddings
-                                                <HelpCircle className="inline w-3 h-3 ml-1" />
-                                            </span>
-                                        </TooltipTrigger>
-                                        <TooltipContent className="tooltip-content">
-                                            <p>Mathematical representations of content meaning using AI models like CLIP and Sentence Transformers</p>
-                                        </TooltipContent>
-                                    </Tooltip> (CLIP/Sentence Transformers) and vector search.
+                                    Search naturally — like “photos of Delhi.”<br />
+                                    FilDOS understands context using CLIP and Sentence Transformer embeddings, making every search feel intuitive and human.
                                 </p>
                             </CardContent>
                         </Card>
@@ -111,11 +78,12 @@ export function LandingAbout() {
                                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 card-icon group-hover:shadow-lg transition-all">
                                     <Bot className="w-8 h-8 text-white" />
                                 </div>
-                                <CardTitle className="text-xl group-hover:text-primary transition-colors">Agent & AI-Native</CardTitle>
+                                <CardTitle className="text-xl group-hover:text-primary transition-colors">AI-Native & Agent-Ready</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600 text-sm group-hover:text-gray-700 transition-colors">
-                                    Programmatic access for AI systems to organise, access and tag files — turning FilDOS into a semantic memory layer.
+                                    FilDOS is built for the next generation of intelligent systems.<br />
+                                    Agents can organize, label, and access files autonomously — turning FilDOS into the semantic backbone of decentralized AI.
                                 </p>
                             </CardContent>
                         </Card>
@@ -125,11 +93,12 @@ export function LandingAbout() {
                                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 card-icon group-hover:shadow-lg transition-all">
                                     <Package className="w-8 h-8 text-white" />
                                 </div>
-                                <CardTitle className="text-xl group-hover:text-primary transition-colors">User Experience</CardTitle>
+                                <CardTitle className="text-xl group-hover:text-primary transition-colors">Seamless User Experience</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600 text-sm group-hover:text-gray-700 transition-colors">
-                                    Abstracts away complexity of decentralized storage with a sleek, intuitive web interface and seamless wallet integration.
+                                    No CIDs. No friction.<br />
+                                    Just a beautiful, intuitive web app that makes decentralized storage feel effortless.
                                 </p>
                             </CardContent>
                         </Card>
