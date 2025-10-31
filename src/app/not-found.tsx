@@ -64,7 +64,7 @@ export default function NotFound() {
             
             <p className="text-xl text-gray-600 max-w-xl mx-auto leading-relaxed">
               The page you&apos;re looking for doesn&apos;t exist yet, but our AI-native storage revolution is 
-              <span className="font-semibold text-primary"> coming soon!</span>
+              <span className="font-medium text-primary"> coming soon!</span>
             </p>
           </div>
 
@@ -87,11 +87,11 @@ export default function NotFound() {
           <div className="pt-8 border-t border-gray-200">
             <p className="text-sm text-gray-500">
               Looking for something specific? Check our{" "}
-              <Link href="/" className="text-primary hover:underline font-medium">
+              <Link href="/" className="text-primary hover:underline font-base">
                 about page
               </Link>{" "}
               or explore our{" "}
-              <Link href="/dashboard" className="text-primary hover:underline font-medium">
+              <Link href="/dashboard" className="text-primary hover:underline font-base">
                 app
               </Link>
             </p>

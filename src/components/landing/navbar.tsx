@@ -30,7 +30,7 @@ export function LandingNavbar() {
           className="relative z-20 mr-4 flex items-center gap-1 px-2 py-1 text-sm font-normal text-black"
         >
           <Image src="/FILDOS.png" alt="FilDOS Logo" width={32} height={32} className="w-10 h-10" />
-          <span className="font-medium text-black text-md">FilDOS</span>
+          <span className="font-base text-secondary-foreground text-md">FilDOS</span>
         </a>
         <NavItems items={navLinks} />
         <NavbarButton href="https://app.fildos.cloud" variant="primary">
@@ -57,7 +57,7 @@ export function LandingNavbar() {
               key={idx}
               href={link.link}
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-neutral-600 dark:text-neutral-300"
+              className="block py-2 text-secondary-foreground"
             >
               {link.name}
             </a>

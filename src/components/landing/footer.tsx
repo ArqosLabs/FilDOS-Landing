@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Twitter } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 
 export function LandingFooter() {
@@ -12,7 +12,7 @@ export function LandingFooter() {
             <section id="social-proof" className="py-20 bg-secondary">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold mb-4 text-gray-900">Trusted by Innovators</h2>
+                        <h2 className="text-4xl font-medium mb-4 text-gray-900">Trusted by Innovators</h2>
                     </div>
 
                     {/* Testimonials */}
@@ -25,7 +25,7 @@ export function LandingFooter() {
                                 <div className="flex items-center">
                                     
                                     <div>
-                                        <div className="font-semibold text-gray-900">Juan Benet</div>
+                                        <div className="font-medium text-gray-900">Juan Benet</div>
                                         <div className="text-sm text-gray-500">Founder & CEO, Protocol Labs</div>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@ export function LandingFooter() {
                                 </p>
                                 <div className="flex items-center">
                                     <div>
-                                        <div className="font-semibold text-gray-900">Patrick Woodhead</div>
+                                        <div className="font-medium text-gray-900">Patrick Woodhead</div>
                                         <div className="text-sm text-gray-500">Co-Founder, Space Meridian</div>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@ export function LandingFooter() {
                                 </p>
                                 <div className="flex items-center">
                                     <div>
-                                        <div className="font-semibold text-gray-900">Sabeen Ali</div>
+                                        <div className="font-medium text-gray-900">Sabeen Ali</div>
                                         <div className="text-sm text-gray-500">Founder & CEO, AngelHack</div>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@ export function LandingFooter() {
             {/* CTA Section */}
             <section className="py-20 bg-primary text-white">
                 <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-4xl font-bold mb-4">
+                    <h2 className="text-4xl font-medium mb-4">
                         Ready to Experience the Future of Storage?
                     </h2>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -97,7 +97,7 @@ export function LandingFooter() {
                     </div>
                     <div className="relative pt-[56.25%] w-full max-w-3xl mx-auto mt-10">
                         <iframe 
-                            className="absolute top-0 left-0 w-full h-full border border-white rounded-lg"
+                            className="absolute top-0 left-0 w-full h-full border border-white rounded-md"
                             src="https://www.youtube.com/embed/fFJgACii3tM?si=vz6sEukN3K1oRKfn" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowFullScreen
@@ -109,16 +109,24 @@ export function LandingFooter() {
             {/* Footer */}
             <footer className="bg-gray-900 text-white pt-12 pb-4">
                 <div className="container mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div>
                             <div className="flex items-center space-x-2 mb-4">
                                 <Image src="/FILDOS.png" alt="FilDOS Logo" width={32} height={32} className="w-8 h-8" />
-
-                                <h3 className="text-xl font-bold">FilDOS</h3>
+                                <h3 className="text-xl font-medium">FilDOS</h3>
                             </div>
                             <p className="text-gray-400">
                                 The future of decentralized storage. Semantic, secure, and AI-native.
                             </p>
+                        </div>
+                        <div className="flex flex-col md:items-end items-start gap-4 mt-8 md:mt-0">
+                            <span className="text-gray-400 mb-2">Follow us for updates:</span>
+                            <Link href="https://x.com/fildos_cloud" target="_blank" rel="noopener noreferrer">
+                                <Button variant="outline" className="flex font-light items-center gap-2 border-gray-700 text-white bg-gray-800 hover:bg-gray-700">
+                                    <Twitter className="w-5 h-5" />
+                                    <span>X (Twitter)</span>
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 
