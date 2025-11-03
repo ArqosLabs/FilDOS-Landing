@@ -17,9 +17,9 @@ export function LandingNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Features", link: "#features" },
-    { name: "How It Works", link: "#how-it-works" },
-    { name: "Reviews", link: "#social-proof" },
+    { name: "FEATURES", link: "#features" },
+    { name: "HOW IT WORKS", link: "#how-it-works" },
+    { name: "REVIEWS", link: "#social-proof" },
   ];
 
   return (

@@ -30,20 +30,20 @@ export function LandingHero() {
                     waveSpeed={0.05}
                 />
             </div>
-            <div className="container mt-[-10rem] mx-auto px-6 flex flex-col items-center justify-center relative z-10">
-                <div className="flex flex-col items-center gap-8">
-                    <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-center text-slate-100 animate-fade-in-up">
+            <div className="container mt-[-8rem] sm:mt-[-10rem] mx-auto px-4 sm:px-6 flex flex-col items-center justify-center relative z-10">
+                <div className="flex flex-col items-center gap-6 sm:gap-8">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-center text-slate-100 animate-fade-in-up leading-tight px-2">
                         A Secure, AI-Native, Meaning-First Decentralized Drive
                     </h1>
-                    <p className="text-2xl md:text-3xl text-slate-800 mb-8 max-w-2xl text-center animate-fade-in-up delay-200">
+                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-slate-800 mb-4 sm:mb-8 max-w-2xl text-center animate-fade-in-up delay-200 px-2">
                         <span>Where storage understands you.</span>
                     </p>
-                    <div className="text-base text-slate-100 font-light text-center">Checkout early beta & join the waitlist</div>
-                    <div className="w-full flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 mx-auto justify-center items-center">
+                    <div className="text-xs sm:text-sm text-slate-100 font-light text-center px-2">Checkout early beta & join the waitlist</div>
+                    <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in-up delay-300 mx-auto justify-center items-center px-2">
                         <Link href="https://app.fildos.cloud/get-started">
-                            <Button size="lg" className="bg-white text-primary font-semibold hover:bg-white/90 shadow-xl hover:shadow-2xl px-10 py-5 rounded-md transition-all duration-300 border-2 border-white/20">
+                            <Button size="lg" className="bg-white text-primary font-medium hover:bg-white/90 shadow-xl hover:shadow-2xl px-6 sm:px-10 py-3 sm:py-5 rounded-md transition-all duration-300 border-2 border-white/20 text-sm sm:text-base w-full sm:w-auto">
                                 Try Early Beta
-                                <ArrowRight className="ml-1 w-8 h-8 bg-primary/20 rounded-full" />
+                                <ArrowRight className="ml-1 w-5 h-5 sm:w-6 sm:h-6 bg-primary/20 rounded-full" />
                             </Button>
                         </Link>
                         <WaitlistForm />
@@ -51,7 +51,7 @@ export function LandingHero() {
                     </div>
             </div>
             {/* Bottom logo row */}
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full flex items-center justify-center z-10">
+            <div className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 w-full flex items-center justify-center z-10 px-2">
                 {/* Left logos */}
                 <div className="flex items-center justify-end flex-1">
                     {[
@@ -65,7 +65,7 @@ export function LandingHero() {
                             src={`/logos/${logo}`}
                             alt={logo.replace('.png', '')}
                             width={50}
-                            className="w-12 h-12 mx-2 bg-white/90 rounded-md"
+                            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-1 sm:mx-2 bg-white/90 rounded-md"
                             style={{
                                 opacity: squeeze,
                                 transform: pushRightX,
@@ -75,10 +75,10 @@ export function LandingHero() {
                     ))}
                 </div>
                 {/* Center FilDOS logo with glassmorphic bg */}
-                <div className="flex items-center justify-center mx-2">
+                <div className="flex items-center justify-center mx-1 sm:mx-2">
                     <Link href="https://app.fildos.cloud/get-started">
-                        <div className="flex items-center justify-center px-3 py-2 rounded-3xl bg-white/20 backdrop-blur-lg shadow-lg border border-white/40 hover:scale-105 transition-transform duration-100">
-                            <Image src="/FILDOS.png" alt="FilDOS Logo" width={96} height={96} className="w-24 h-24 opacity-90 z-10" />
+                        <div className="flex items-center justify-center px-2 sm:px-3 py-1 sm:py-2 rounded-2xl sm:rounded-3xl bg-white/20 backdrop-blur-lg shadow-lg border border-white/40 hover:scale-105 transition-transform duration-100">
+                            <Image src="/FILDOS.png" alt="FilDOS Logo" width={96} height={96} className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 opacity-90 z-10" />
                         </div>
                     </Link>
                 </div>
@@ -96,7 +96,7 @@ export function LandingHero() {
                             alt={logo.replace('.png', '')}
                             width={50}
                             height={50}
-                            className="w-12 h-12 mx-2 bg-white/90 rounded-md"
+                            className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-1 sm:mx-2 bg-white/90 rounded-md"
                             style={{
                                 opacity: squeeze,
                                 transform: pushLeftX,
