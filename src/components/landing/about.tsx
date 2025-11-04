@@ -1,29 +1,16 @@
-import { HelpCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip";
 import Image from "next/image";
 
 export function LandingAbout() {
     return (
-        <TooltipProvider>
+        <>
             <section className="pt-12 sm:pt-16 md:pt-20 bg-primary-foreground">
                 <div className="container mx-auto px-4 sm:px-6">
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 text-gray-900">WHAT IS IT?</h2>
                         <p className="text-sm sm:text-lg font-light text-gray-700 leading-relaxed text-justify">
                             <strong>FilDOS</strong> is a decentralized drive built on Filecoin, reimagined for the AI era.{" "}
-                            It lets you store, search, and share files by meaning, not by raw identifiers like{" "}
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <span className="underline decoration-dotted cursor-help text-primary">
-                                        CIDs
-                                        <HelpCircle className="inline w-3 h-3 ml-1" />
-                                    </span>
-                                </TooltipTrigger>
-                                <TooltipContent className="tooltip-content">
-                                    <p>Content Identifiers - unique cryptographic hashes used in IPFS/Filecoin to identify content</p>
-                                </TooltipContent>
-                            </Tooltip>.
+                            It lets you store, search, and share files by meaning, not by raw identifiers like CIDs.
                             With AI-native and agent-compatible access, FilDOS transforms decentralized storage into a semantic memory layer — 
                             where data becomes intelligent, discoverable, and alive.
                         </p>
@@ -106,6 +93,6 @@ export function LandingAbout() {
                     </div>
                 </div>
             </section>
-        </TooltipProvider>
+        </>
     );
 }
