@@ -19,8 +19,6 @@ FilDOS combines the power of blockchain technology with AI-driven semantic searc
 - TypeScript
 - Tailwind CSS
 - Filecoin
-- Supabase
-- OpenAI
 - Web3 Integration
 
 ## Use Cases
@@ -32,7 +30,6 @@ FilDOS combines the power of blockchain technology with AI-driven semantic searc
 
 ## Links
 - Website: https://fildos.cloud
-- GitHub: https://github.com/ArqosLabs/FilDOS-Landing
 
 ## Organization
 Developer: ArqosLabs
