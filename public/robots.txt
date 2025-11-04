@@ -6,4 +6,4 @@ Allow: /
 # Disallow: /admin/
 
 # Sitemap
-Sitemap: https://fildos.io/sitemap.xml
+Sitemap: https://fildos.cloud/sitemap.xml

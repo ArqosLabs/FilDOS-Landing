@@ -31,7 +31,7 @@ FilDOS combines the power of blockchain technology with AI-driven semantic searc
 - Enterprise-grade blockchain storage solutions
 
 ## Links
-- Website: https://fildos.io
+- Website: https://fildos.cloud
 - GitHub: https://github.com/ArqosLabs/FilDOS-Landing
 
 ## Organization
@@ -39,4 +39,4 @@ Developer: ArqosLabs
 Focus: Decentralized storage, AI integration, Web3 infrastructure
 
 ## Contact
-For inquiries and collaboration, visit our website at https://fildos.io
+For inquiries and collaboration, visit our website at https://fildos.cloud

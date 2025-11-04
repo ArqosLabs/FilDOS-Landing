@@ -25,14 +25,14 @@ export const metadata: Metadata = {
   authors: [{ name: "ArqosLabs" }],
   creator: "ArqosLabs",
   publisher: "ArqosLabs",
-  metadataBase: new URL("https://fildos.io"),
+  metadataBase: new URL("https://fildos.cloud"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://fildos.io",
+    url: "https://fildos.cloud",
     siteName: "FilDOS",
     title: "FilDOS - AI-Native Decentralized Storage",
     description:
