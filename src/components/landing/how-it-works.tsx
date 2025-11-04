@@ -151,7 +151,7 @@ export function HowItWorks() {
                                             src={item.image}
                                             alt={item.title}
                                             fill
-                                            className="object-fill p-10 bg-white/70"
+                                            className="object-fill p-4 sm:p-6 md:p-8 lg:p-10 bg-white/70"
                                         />
                                     </motion.div>
                                 ))}
